@@ -16,10 +16,10 @@
             <h1>Shawn Mathew</h1>
 
             <nav>
-               <h2>Home</h2>
-               <h2>Projects</h2>
+               <a href="#home">Home</a>
+               <a href="#projects">Projects</a>
                <!-- Resume? -->
-               <h2>Contact</h2> 
+               <a href="#contact">Contact</a> 
             </nav>
 
             
@@ -27,30 +27,35 @@
 
         <!-- Image + Description -->
         
-        <div>
+        <section id="home">
+
             <img src="" alt="A picture of myself">
 
-            <h1>Hi I'm Shawn Mathew</h1>
+            <h2>Hi I'm Shawn Mathew</h2>
             <h2>I am a <span id="typing"></span></h2>
 
-            <button id="resume-download-button">Download Resume</button>
+            <a href="my_resume.pdf" class="button" id="resume-download-button">Download Resume</a>
             <div id="social-media-icons"></div>
 
-        </div>
+        </section>
 
 
         <!-- Projects -->
 
-        <div class="carousel">
+        <h2>Projects</h2>
+        <section class="carousel" id="projects">
             <div class="slide active">Project One</div>
             <div class="slide">Project Two</div>
             <div class="slide">Project Three</div>
             <button class="prev" onclick="prevSlide()">&lt;</button>
             <button class="next" onclick="nextSlide()">&gt;</button>
-        </div>
+        </section>
 
 
 
+        <section id="contact">
+            <h2>Contact</h2>
+        </section>
 
 
 
