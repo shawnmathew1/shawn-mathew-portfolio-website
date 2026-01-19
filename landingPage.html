@@ -29,10 +29,18 @@
         
         <section id="home">
 
-            <img src="" alt="A picture of myself">
 
-            <h2>Hi I'm Shawn Mathew</h2>
-            <h2>I am a <span id="typing"></span></h2>
+            <div id="image-text">
+                <img id="home-image" src="Shawn Mathew Profile Photo Square.png" alt="A picture of myself">
+
+                <div id="special-text">
+                    <h2>Hi I'm Shawn Mathew</h2>
+                    <h2>I am a <span id="typing"></span></h2>
+                </div>
+            </div>
+
+            
+            
 
             <a href="my_resume.pdf" class="button" id="resume-download-button">Download Resume</a>
             <div id="social-media-icons"></div>
@@ -44,9 +52,27 @@
 
         <h2>Projects</h2>
         <section class="carousel" id="projects">
-            <div class="slide active">Project One</div>
-            <div class="slide">Project Two</div>
-            <div class="slide">Project Three</div>
+            <div class="slide active">
+                <img src="project1.png" alt="Image of project 1">
+                <div class="project-text">
+                    <h3>Project One</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="project2.png" alt="Image of project 2">
+                <div class="project-text">
+                    <h3>Project Two</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="project3.png" alt="Image of project 3">
+                <div class="project-text">
+                    <h3>Project Three</h3>
+                    <p>Description</p>
+                </div>
+            </div>
             <button class="prev" onclick="prevSlide()">&lt;</button>
             <button class="next" onclick="nextSlide()">&gt;</button>
         </section>
