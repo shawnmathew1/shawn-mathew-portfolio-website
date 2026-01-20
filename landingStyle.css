@@ -41,6 +41,7 @@ nav a {
 }
 
 #home-image {
+
     width: 200px;
     height 200px;
     border-radius: 50%;
@@ -79,10 +80,22 @@ nav a {
 }
 
 
+.icon-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.icon-row img {
+    width: 50px;
+    height: auto;
+}
+
 @media (min-width: 768px) {
 
 }
 
 @media (min-width: 1440px) {
-    
+
 }
