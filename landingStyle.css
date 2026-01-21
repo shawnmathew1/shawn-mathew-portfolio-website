@@ -106,6 +106,19 @@ nav a {
     text-align: center;
 }
 
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 @media (min-width: 768px) {
 
 }
