@@ -4,6 +4,8 @@ body {
     margin: 0;
 }
 
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -125,6 +127,10 @@ nav a {
     justify-content: center;
 }
 
+
+#contact {
+    padding-bottom: 25px;
+}
 @media (min-width: 768px) {
     #home-image {
         width: 350px;
@@ -141,6 +147,14 @@ nav a {
 
     .center-subtitle h2 {
         font-size: 2rem;
+    }
+
+    .button-style {
+        padding: 10px;
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 10px;
     }
 }
 
@@ -160,5 +174,13 @@ nav a {
 
     .center-subtitle h2 {
         font-size: 2rem;
+    }
+
+    .button-style {
+        padding: 15px;
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 10px;
     }
 }
