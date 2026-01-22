@@ -23,6 +23,7 @@ nav a {
 }
 
 
+
 #resume-download-button {
     display: inline-block;      
     margin: 2rem auto;   
@@ -119,10 +120,45 @@ nav a {
     margin-top: 1rem;
 }
 
-@media (min-width: 768px) {
+.center-subtitle {
+    display: flex;
+    justify-content: center;
+}
 
+@media (min-width: 768px) {
+    #home-image {
+        width: 350px;
+        height: 350px;
+    }   
+
+    #special-text {
+        margin-right: 20px;
+    }
+
+    #special-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .center-subtitle h2 {
+        font-size: 2rem;
+    }
 }
 
 @media (min-width: 1440px) {
+    #home-image {
+        width: 500px;
+        height: 500px;
+    }   
 
+    #special-text {
+        margin-right: 30px;
+    }
+
+    #special-text h2 {
+        font-size: 5.5rem;
+    }
+
+    .center-subtitle h2 {
+        font-size: 2rem;
+    }
 }
