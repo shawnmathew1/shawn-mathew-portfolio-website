@@ -122,6 +122,11 @@ nav a {
     margin-top: 1rem;
 }
 
+
+a {
+    text-decoration: none;
+}
+
 .center-subtitle {
     display: flex;
     justify-content: center;
