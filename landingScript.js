@@ -2,5 +2,33 @@ const titles = ["Fullstack Developer", "Frontend Developer", "Programmer"]
 const typingElement = document.getElementById("typing");
 let i = 0;
 let j = 0;
-let currentSkill = "";
+let currentTitle = "";
 let isDeleting = false;
+
+
+function type() {
+    currentTitle = titles[i];
+
+    if (!isDeleting) {
+        typingElement.textContent = currentTitle.substring(0, j + 1);
+        j++;
+        
+        if (j === currentTitle.length) {
+            isDeleting = true;
+            setTimeout(type, 1000);
+            return;
+        }
+    } else {
+        typingElement.textContent = currentTitle.substring(0, j - 1);
+        j--;
+
+        if (j === 0) {
+            isDeleting = false;
+            i = (i + 1) % titles.length;
+        }
+    }
+
+    setTimeout(type, isDeleting ? 80 : 120);
+
+}
+type();
