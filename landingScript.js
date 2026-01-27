@@ -5,6 +5,9 @@ let j = 0;
 let currentTitle = "";
 let isDeleting = false;
 
+let currentSlide = 0;
+const slide = document.querySelectorAll('.slide');
+
 
 function type() {
     currentTitle = titles[i];
