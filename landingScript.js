@@ -34,4 +34,17 @@ function type() {
     setTimeout(type, isDeleting ? 80 : 120);
 
 }
+
+function showSlide() {
+
+}
+
+function nextSlide() {
+
+}
+
+function prevSlide() {
+    
+}
+
 type();
