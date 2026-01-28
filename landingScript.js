@@ -8,6 +8,9 @@ let isDeleting = false;
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 
+let hamburger;
+let navLinks;
+
 
 function type() {
     currentTitle = titles[i];
