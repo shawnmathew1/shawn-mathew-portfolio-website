@@ -6,7 +6,7 @@ let currentTitle = "";
 let isDeleting = false;
 
 let currentSlide = 0;
-const slide = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll('.slide');
 
 
 function type() {
@@ -35,16 +35,19 @@ function type() {
 
 }
 
-function showSlide() {
-
+function showSlide(i) {
+    slides.forEach(s => s.classList.remove('active'));
+    slides[i].classList.add('active');
 }
 
 function nextSlide() {
-
+    currentSlide = (currentSlide+1) % slides.length;
+    showSlide(currentSlide);
 }
 
 function prevSlide() {
-    
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
 }
 
 type();
