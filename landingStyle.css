@@ -181,7 +181,22 @@ a {
         border-radius: 10px;
     }
 
-    
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+    }
 }
 
 

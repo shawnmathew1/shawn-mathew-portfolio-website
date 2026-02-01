@@ -8,8 +8,8 @@ let isDeleting = false;
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 
-let hamburger;
-let navLinks;
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
 
 
 function type() {
@@ -52,5 +52,9 @@ function prevSlide() {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     showSlide(currentSlide);
 }
+
+hamburger.addEventListener('click', () => {
+    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+});
 
 type();
