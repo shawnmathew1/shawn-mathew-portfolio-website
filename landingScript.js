@@ -9,7 +9,13 @@ let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 
 const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
+const mobileMenu = document.getElementById('mobile-menu');
+
+const links = [
+    { text: "Home", href: "#home" },
+    { text: "Projects", href: "#projects" },
+    { text: "Contact", href: "#contact" }
+];
 
 
 function type() {
@@ -54,7 +60,14 @@ function prevSlide() {
 }
 
 hamburger.addEventListener('click', () => {
-    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+});
+
+links.forEach(link => {
+    const a = document.createElement('a');
+    a.textContent = link.text;
+    a.href = link.href;
+    mobileMenu.appendChild(a);
 });
 
 type();
