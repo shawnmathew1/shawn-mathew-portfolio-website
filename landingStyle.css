@@ -15,6 +15,9 @@ body {
 }
 
 
+.nav-links {
+    display: none;
+}
 
 header {
     display: flex;
