@@ -184,6 +184,11 @@ a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+
+.hamburger span {
+    font-size: 40px;
+}
+
 @media (min-width: 768px) {
     #home-image {
         width: 350px;
