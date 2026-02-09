@@ -312,6 +312,8 @@ a {
         border: 1px solid white;
         border-radius: 10px;
     }
-    
-   
+
+    .carousel-controls button {
+        padding: 20px;
+    } 
 }
