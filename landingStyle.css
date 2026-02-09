@@ -151,6 +151,10 @@ nav a {
     margin-top: 1rem;
 }
 
+.carousel-controls button {
+    padding: 10px;
+}
+
 
 a {
     text-decoration: none;
