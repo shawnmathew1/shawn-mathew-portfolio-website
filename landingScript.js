@@ -11,12 +11,27 @@ const slides = document.querySelectorAll('.slide');
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
 
+/*
+const beyondMobileMenu = "(min-width: 769px)";
+const beyondMobileMenuObject = window.matchMedia(beyondMobileMenu);
+*/
+
+
 const links = [
     { text: "Home", href: "#home" },
     { text: "Projects", href: "#projects" },
     { text: "Contact", href: "#contact" }
 ];
 
+/*
+function handleMobileMenu(mediaEvent) {
+    if (mediaEvent.matches) {
+        mobileMenu.innerHTML = '';
+    } else {
+
+    }
+}
+*/
 
 function type() {
     currentTitle = titles[i];
@@ -70,4 +85,9 @@ links.forEach(link => {
     mobileMenu.appendChild(a);
 });
 
+/*
+
+beyondMobileMenuObject.addEventListener('change', handleMobileMenu);
+handleMobileMenu(beyondMobileMenuObject);
+*/
 type();
