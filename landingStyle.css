@@ -273,7 +273,7 @@ a {
     }
 
     .center-subtitle h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .button-style {
@@ -287,6 +287,8 @@ a {
     .carousel-controls button {
         padding: 20px;
     } 
+
+    
 }
 
 @media (min-width: 1440px) {
@@ -304,7 +306,7 @@ a {
     }
 
     .center-subtitle h2 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .button-style {
